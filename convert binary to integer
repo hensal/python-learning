@@ -1,3 +1,27 @@
   converting integer number into binary in in python:
   
+  Method 1:  
  int num=int(bin(number)[2:])
+ 
+ Method 2:
+ In Python, binary values are represented by prefixing 0b before the binary representation. 
+ It automatically converts the binary to an integer value, as shown below:
+a = 0b101
+print(a)
+
+Method 3:
+The fstrings in the recent versions of Python is a new and efficient way of formatting strings. 
+We can use them to carry out such binary to integer conversions as shown below:
+print(f'{0b101:#0}')
+
+Method 4:
+def binary2int(binary): 
+    int_val, i, n = 0, 0, 0
+    while(binary != 0): 
+        a = binary % 10
+        int_val = int_val + a * pow(2, i) 
+        binary = binary//10
+        i += 1
+    print(int_val)  
+
+binary2int(101)
