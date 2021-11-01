@@ -1,0 +1,3 @@
+  converting integer number into binary in in python:
+  
+ int num=int(bin(number)[2:])
