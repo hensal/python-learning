@@ -1,0 +1,7 @@
+Perventing the existing order:
+numbers = [2, 4, 5, 6, 9, 4, 0, 8, 2, 4]
+finale = list(dict.fromkeys(numbers))
+
+just to revome the duplicates without preventing the existing order
+duplicate = [2, 4, 5, 6, 9, 4, 0, 8, 2, 4]
+print(list(set(duplicate)))
