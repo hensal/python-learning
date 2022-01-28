@@ -1,0 +1,7 @@
+a_list = [10, 30, 40, 50,90]
+a_number = 30
+
+larger_elements = [element for element in a_list if element > a_number]
+number_of_elements = len(larger_elements)
+
+print(number_of_elements)
